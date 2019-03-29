@@ -1,0 +1,139 @@
+slots:
+  item:
+    type: text
+  phone:
+    type: text
+  company:
+    type: text  
+  offline_online:
+    type: text
+  certificate:
+    type: text
+  payment_type:
+    type: text 
+  business_type:
+    type: text   
+  requested_slot:
+    type: unfeaturized
+
+intents:
+  - greet
+  - confirm
+  - goodbye
+  - thanks
+  - deny
+  - inform
+  - intent_query
+  - intent_query_payment
+  - intent_query_crawler
+  - intent_query_custody
+  - intent_query_documents
+  - intent_query_interface
+  - intent_query_price
+  - intent_query_channel
+
+entities:
+  - item
+  - time
+  - phone
+  - price
+  - business_type
+  - payment_type
+  - company
+  - contactor
+  - query_type
+
+templates:
+  utter_greet:
+    - "您好!，我是机器人小付，很高兴为您服务。"
+    - "你好!，我是小付，可以帮您咨询付钱拉业务。"
+    - "hi!，人家是小付，有什么可以帮您吗。"
+  utter_goodbye:
+    - "再见，为您服务很开心"
+    - "Bye， 下次再见"
+  utter_confirm:
+    - "是的"
+    - "对的"
+    - "恩，是的"
+  utter_query_information:
+    - "您方便留下电话、公司名么"
+    - "请您告诉我一下您的联系电话、公司名么"
+  utter_query_company:
+    - "公司名呢？"
+    - "您是哪个公司的呢？"
+    - "方便提供一下公司名称么"
+    - "您公司叫什么名字"
+  utter_query_phone:
+    - "您方便留下电话么"    
+    - "您电话多少"
+    - "您有座机或者手机么，方便留一下么"  
+  utter_default:
+    - "十分抱歉，我没搞清楚您要说什么"
+    - "您能再说一遍吗，我没听清"
+  utter_contact_later:
+    - "谢谢，我们的客户经理随后会联系您"
+    - "谢谢您的信息，我们会尽快联系您"
+    - "好的，后续会有同事跟进跟您联系"
+  utter_thanks:
+    - "不用谢"
+    - "我应该做的"
+    - "您开心我就开心"
+  utter_ask_morehelp:
+    - "还有什么能帮您吗"
+    - "您还想干什么"
+  utter_query_options:
+    - "您是要做资金存管业务？还是爬虫数据业务？还是做支付接入呢？"
+  utter_about_fuqianla:
+    - "我们是金融科技解决方案提供商，为企业、银行及金融机构提供专业技术服务，我们的产品包括聚合支付、安享账户、现金罗盘、八方数据等。"    
+  utter_ack_management:
+    - "已经为您办理好了{item}"
+  utter_online_offline:
+    - "线上还是线下"
+  utter_payment_type:  
+    - "什么类型呢？app？pc？公众号？还是H5？"
+  utter_business_type:  
+    - "您主营业务是什么呢？" 
+    - "您是做什么业务的？"   
+    - "您是哪个行业的？做什么的呢？"   
+  utter_provided_docuemnts:
+    - "您需要提供公司五证：营业执照，组织机构代码证，税务登记证，开户许可证，法人身份证。若三证合一，则提供营业执照，开户许可证，法人身份证。" 
+  utter_network_document:
+    - "具备网络文化许可证" 
+  utter_settle_interval:
+    - "结算周期为T+1，即当天交易，第二个工作日结算到绑定银行卡。" 
+  utter_price:  
+    - "付钱拉的收费项目包括基础服务和增值服务。基础服务是指帮助您支付接入，服务是免费的，第三方会和您收取接入服务费，例如开通微信公众号支付，需缴纳开通费300元。另外，无论是自行开通还是委托付钱拉代开通道，第三方支付公司都会和您收取交易手续费，比如微信支付的单笔费率为0.6%。增值服务包括：账户服务、资金托管、现金罗盘、八方数据，如果对这个感兴趣，可以电话咨询我们。"
+  utter_support_channel:  
+    - "付钱拉目前支持支付宝、微信、银联、易宝、京东支付、百度钱包、快钱、PayPal等主流支付通道。" 
+  utter_about_crawler:
+    - "八方数据是一个依托互联网渠道，通过大数据技术抓取，获取专业机构数据的信息技术平台。为企业输出全套数据征信，校验信息真伪，降低风险，提高效率的整体解决方案。适用于有数据需求的所有行业。"
+  utter_about_funds_custody:
+    - "为互联网网贷平台提供银行资金存管服务"
+  ask_client_form.AskClientInfoForm:
+    - "回答什么"
+
+
+actions:
+  - ask_client_form.AskClientInfoForm
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - utter_contact_later
+  - utter_thanks
+  - utter_ask_morehelp
+  - utter_query_company
+  - utter_ack_management
+  - utter_online_offline
+  - utter_payment_type 
+  - utter_business_type
+  - utter_query_options
+  - utter_provided_docuemnts
+  - utter_network_document
+  - utter_settle_interval
+  - utter_about_crawler
+  - utter_query_phone
+  - utter_price
+  - utter_support_channel
+  - utter_about_funds_custody
+  - utter_about_fuqianla
+

@@ -1,0 +1,1 @@
+python -m rasa_core.train -d domain.yml -s stories.md -o model/dialogue --epochs 50

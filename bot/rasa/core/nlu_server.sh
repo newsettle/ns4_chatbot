@@ -1,0 +1,1 @@
+python -m rasa_nlu.server -v --debug -c nlu_config.yml --path model

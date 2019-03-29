@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>首页</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<h1>分类{{var3}}报警列表</h1>
+        {% for row in var1 %}
+                 <tr>
+                     <td ><a href="{{ var2}}/monitor/detail?id={{row['ordernum']}}">{{ row['title'] }}</a></td>
+                 </tr>
+        {% endfor %}
+
+	</body>
+</html>

@@ -1,0 +1,22 @@
+#docker pull richardchien/cqhttp:latest
+
+#生产
+#post_url=http://127.0.0.1:8080/coolq_callback
+#qq=1573885251
+#测试
+post_url=http://127.0.0.1:8080/coolq_callback
+qq=25473936
+
+echo "正在启动酷Q[QQ服务器]......"
+echo "请修改$(pwd)/coolq/app/io.github.richardchien.coolqhttpapi/config/<QQ_ID>.ini"
+echo "加入：post_url=http://[IP]:8080/coolq_callback"
+docker run --name=coolq --rm \
+	-p 9000:9000  \
+	-p 5700:5700  \
+	-v $(pwd)/coolq:/home/user/coolq \
+	-e VNC_PASSWD=123456 \
+	-e COOLQ_ACCOUNT=$qq \
+	-e CQHTTP_POST_URL=$post_url \
+	richardchien/cqhttp:latest
+             
+             

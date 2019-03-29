@@ -1,0 +1,22 @@
+#部署方法：
+#拷贝此文件到：/lib/systemd/system/
+#运行：systemctl daemon-reload
+#启动服务：service chatbot start
+
+[Unit]
+Description=Chatbot Service@fuqian.net
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+WorkingDirectory=/home/newsettle/aiprojects/chatbot/
+Type=simple
+User=newsettle
+PIDFile=/run/chatbot.pid
+ExecStartPre=
+ExecStart=/home/newsettle/py2/bin/python Main.py
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

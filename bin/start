@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup /home/newsettle/py2/bin/python Main.py >/dev/null 2>&1 &
