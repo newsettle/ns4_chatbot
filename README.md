@@ -1,6 +1,6 @@
 # 聊天机器人项目
 官方文档请点击
-（https://github.com/newsettle/ns4_chatbot/blob/master/docs/ns4_chatbot%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.pdf）
+（https://github.com/newsettle/ns4_chatbot/blob/master/docs/ns4_chatbot%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.pdf ）
 
 这个项目是针对业务的一个聊天机器人的聊天框架，实际上是一个集成项目，集成了qqbot、wxchat、rasa以及web服务。
 
