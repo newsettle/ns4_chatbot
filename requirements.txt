@@ -167,7 +167,7 @@ ujson==1.35
 urllib3==1.22
 wcwidth==0.1.7
 websocket-client==0.48.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wrapt==1.10.11
 wxpy==0.3.9.8
 zope.interface==4.5.0
