@@ -24,7 +24,7 @@ coloredlogs==10.0
 colorhash==1.0.2
 ConfigArgParse==0.13.0
 constantly==15.1.0
-cryptography==2.3.1
+cryptography==3.2
 cycler==0.10.0
 cymem==1.31.2
 #cytoolz==0.9.0.1
