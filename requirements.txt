@@ -62,7 +62,7 @@ ipython-genutils==0.2.0
 itchat==1.2.32
 itsdangerous==0.24
 jieba==0.39
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 JPype1==0.6.2
 jsonpickle==0.9.6
