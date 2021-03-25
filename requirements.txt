@@ -128,7 +128,7 @@ python-crfsuite==0.9.6
 python-dateutil==2.7.3
 python-telegram-bot==10.1.0
 pytz==2018.5
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==17.1.2
 qqbot==2.3.10
 #rasa-core==0.10.3
