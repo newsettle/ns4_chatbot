@@ -109,7 +109,7 @@ preshed==1.0.1
 prompt-toolkit==1.0.15
 protobuf==3.6.0
 ptyprocess==0.6.0
-py==1.5.4
+py==1.10.0
 #py2neo==4.1.0
 pycparser==2.18
 pydub==0.22.1
