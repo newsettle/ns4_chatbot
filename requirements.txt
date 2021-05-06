@@ -38,7 +38,7 @@ enum34==1.1.6
 fakeredis==0.10.3
 fbmessenger==5.2.0
 Flask==1.0.2
-Flask-Cors==3.0.4
+Flask-Cors==3.0.9
 funcsigs==1.0.2
 functools32==3.2.3.post2
 future==0.16.0
