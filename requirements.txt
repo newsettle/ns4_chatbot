@@ -115,7 +115,7 @@ pycparser==2.18
 pydub==0.22.1
 Pygments==2.2.0
 PyHamcrest==1.9.0
-PyJWT==1.6.4
+PyJWT==2.4.0
 pykwalify==1.6.0
 PyMySQL==0.9.2
 pyOpenSSL==18.0.0
